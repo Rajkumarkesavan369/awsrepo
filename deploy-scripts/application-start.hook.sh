@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sudo service nginx restart
+sudo service nginx stop
+sudo service nginx start
