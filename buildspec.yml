@@ -10,8 +10,11 @@ phases:
       - npm install
   build:
     commands:
-      - ng build -c production
+      - ng build --prod
+    finally:
+      - echo This is the final block execution!
 artifacts:
-  base-directory: dist/my-angular-project
   files:
-    - '**/*'
+    - 'deploy-script/**/*'
+    - 'dist/my-angular-project/**/*'
+    - appsec.yml
