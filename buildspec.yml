@@ -17,4 +17,4 @@ artifacts:
   files:
     - 'deploy-script/**/*'
     - 'dist/my-angular-project/**/*'
-    - appsec.yml
+    - appspec.yml
